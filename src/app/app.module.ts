@@ -9,6 +9,8 @@ import { FormationComponent } from './formation/formation.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AppRoutingModule } from './app-routing.model';
+import { HomeComponent } from './home/home.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AppRoutingModule } from './app-routing.model';
     ExperienceComponent,
     FormationComponent,
     EducationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    HomeComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
