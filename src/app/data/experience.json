@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "company": "Main Software, Lda",
+        "companyImage": "https://img.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702425600&semt=ais",
+        "role": "Full Stack Developer",
+        "duration": "December 2022 - September 2023",
+        "description": "During this internship, I developed...",
+        "tecnologies": [
+            "C#",
+            ".NET",
+            "REST API",
+            "SQL",
+            "Linq Queries",
+            "Entity Framework",
+            "HTML",
+            "Javascript",
+            "AngularJS"
+        ]
+    },
+    {
+        "id": 2,
+        "company": "Main Software, Lda",
+        "companyImage": "https://lh3.googleusercontent.com/3bXLbllNTRoiTCBdkybd1YzqVWWDRrRwJNkVRZ3mcf7rlydWfR13qJlCSxJRO8kPe304nw1jQ_B0niDo56gPgoGx6x_ZOjtVOK6UGIr3kshpmTq46pvFObfJ2K0wzoqk36MWWSnh0y9PzgE7PVSRz6Y",
+        "role": "Software Developer",
+        "duration": "March 2022 - July 2022",
+        "description": "During this internship, I developed...",
+        "tecnologies": [
+            "C#",
+            ".NET"
+        ]
+    }
+]

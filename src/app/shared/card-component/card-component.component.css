@@ -1,0 +1,13 @@
+.pf-card-container {
+    max-width: 540px;
+    max-height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pf-card-body {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: scroll;
+}
