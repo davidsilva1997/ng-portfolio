@@ -3,15 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CardComponentComponent } from './shared/card-component/card-component.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { FormationComponent } from './formation/formation.component';
+import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AppRoutingModule } from './app-routing.model';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponentComponent
+    CardComponentComponent,
+    HeaderComponent,
+    ExperienceComponent,
+    FormationComponent,
+    EducationComponent,
+    ProjectsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
