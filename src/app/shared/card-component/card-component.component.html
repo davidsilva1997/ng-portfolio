@@ -1,18 +1,18 @@
-<div class="card mb-3 pf-card-container">
+<div class="card mb-3 pf-card-container" [routerLink]="card.id">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-4 d-flex align-items-center justify-content-center" style="max-height: 130px;">
       <img 
         [src]="card.imagePath"
         [alt]="card.imageDescription" 
         class="img-fluid">
     </div>
-    <div class="col-md-8">
+    <div class="col-8">
       <div class="card-body">
-        <h5 class="card-title">{{ card.title }}</h5>
+        <h5 class="card-title pf-card-text" [title]="card.title">{{ card.title }}</h5>
         <p class="card-text">
-            <small class="text-body-secondary">{{ card.subTitle }}</small>
+            <small class="text-body-secondary pf-card-text" [title]="card.subTitle">{{ card.subTitle }}</small>
         </p>
-        <p class="card-text pf-card-body">{{ card.body }}</p>
+        <p class="card-text pf-card-text">{{ card.body }}</p>
       </div>
     </div>
   </div>

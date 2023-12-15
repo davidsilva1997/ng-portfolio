@@ -1,11 +1,13 @@
 export class Card {
+    id: number;
     title: string;
     subTitle: string;
     body: string;
     imagePath: string;
     imageDescription: string;
 
-    constructor(title: string, subTitle: string, body: string, imagePath: string, imageDescription: string){
+    constructor(id: number, title: string, subTitle: string, body: string, imagePath: string, imageDescription: string){
+        this.id = id;
         this.title = title;
         this.subTitle = subTitle;
         this.body = body;

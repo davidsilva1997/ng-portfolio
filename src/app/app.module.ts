@@ -11,6 +11,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AppRoutingModule } from './app-routing.model';
 import { HomeComponent } from './home/home.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ExperienceListComponent } from './experience/experience-list/experience-list.component';
+import { ExperienceItemComponent } from './experience/experience-list/experience-item/experience-item.component';
+import { ExperienceDetailComponent } from './experience/experience-detail/experience-detail.component';
+import { ExperienceStartComponent } from './experience/experience-start/experience-start.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     EducationComponent,
     ProjectsComponent,
     HomeComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ExperienceListComponent,
+    ExperienceItemComponent,
+    ExperienceDetailComponent,
+    ExperienceStartComponent
   ],
   imports: [
     BrowserModule,
