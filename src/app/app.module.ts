@@ -15,6 +15,10 @@ import { ExperienceListComponent } from './experience/experience-list/experience
 import { ExperienceItemComponent } from './experience/experience-list/experience-item/experience-item.component';
 import { ExperienceDetailComponent } from './experience/experience-detail/experience-detail.component';
 import { ExperienceStartComponent } from './experience/experience-start/experience-start.component';
+import { EducationListComponent } from './education/education-list/education-list.component';
+import { EducationItemComponent } from './education/education-list/education-item/education-item.component';
+import { EducationStartComponent } from './education/education-start/education-start.component';
+import { EducationDetailComponent } from './education/education-detail/education-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { ExperienceStartComponent } from './experience/experience-start/experien
     ExperienceListComponent,
     ExperienceItemComponent,
     ExperienceDetailComponent,
-    ExperienceStartComponent
+    ExperienceStartComponent,
+    EducationListComponent,
+    EducationItemComponent,
+    EducationStartComponent,
+    EducationDetailComponent
   ],
   imports: [
     BrowserModule,

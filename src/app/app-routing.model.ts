@@ -9,6 +9,8 @@ import { EducationComponent } from "./education/education.component";
 import { ErrorPageComponent } from "./error-page/error-page.component";
 import { ExperienceDetailComponent } from "./experience/experience-detail/experience-detail.component";
 import { ExperienceStartComponent } from "./experience/experience-start/experience-start.component";
+import { EducationStartComponent } from "./education/education-start/education-start.component";
+import { EducationDetailComponent } from "./education/education-detail/education-detail.component";
 
 const appRoutes = [
     { path: '', component: HomeComponent },
@@ -20,7 +22,14 @@ const appRoutes = [
             { path: ':id', component: ExperienceDetailComponent }
         ]
     },
-    { path: 'education', component: EducationComponent },
+    { 
+        path: 'education', 
+        component: EducationComponent,
+        children: [
+            { path: '', component: EducationStartComponent },
+            { path: ':id', component: EducationDetailComponent }
+        ]
+    },
     { path: 'projects', component: ProjectsComponent },
     { path: 'formations', component: FormationComponent },
     { path: 'not-found', component: ErrorPageComponent, data: { message: 'Page not found!' } },
