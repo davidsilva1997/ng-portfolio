@@ -8,4 +8,5 @@ import { Card } from '../../models/card.model';
 })
 export class CardComponentComponent {
   @Input() card : Card;
+  @Input('selected') selected: boolean = false;
 }

@@ -23,6 +23,8 @@ export class ExperienceDetailComponent implements OnInit {
         if (!this.experience){
           this.router.navigate(['/experience']);
         }
+
+        this.experienceService.setExperienceSelected(id);
       }
     )
   }

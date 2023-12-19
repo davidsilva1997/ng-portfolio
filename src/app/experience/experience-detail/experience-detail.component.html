@@ -1,21 +1,22 @@
 <div class="row">
     <div class="col-md-12">
-        <h3>{{ experience.role }}</h3>
-        <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
+        <p class="pf-label">Experience</p>
+        <p class="fw-bold fs-5 mb-1">{{ experience.role }}</p>
+        <p class="fw-lighter fst-italic">{{ experience.startDate }} - {{ experience.endDate }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <p class="lead">Tasks performed</p>
+        <p class="pf-label">Tasks performed</p>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let descriptionXpt of experience.description">{{ descriptionXpt }}</li>
+            <li class="list-group-item" *ngFor="let description of experience.description">{{ description }}</li>
         </ul>
     </div>
 </div>
 <br>
 <div class="row">
     <div class="col-md-12">
-        <p class="lead">Technologies envolved</p>
+        <p class="pf-label">Technologies envolved</p>
         <div class="badge bg-secondary text-wrap m-1" *ngFor="let technology of experience.technologies">{{ technology }}</div>
     </div>
 </div>

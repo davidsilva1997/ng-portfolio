@@ -10,6 +10,7 @@ import { Card } from '../../../models/card.model';
 export class ExperienceItemComponent implements OnInit {
   @Input('experience') experience: Experience;
   @Input('id') id: number;
+  @Input('selected') selected: boolean = false;
   card: Card;
 
   ngOnInit(): void {

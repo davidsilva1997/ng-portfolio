@@ -9,10 +9,15 @@ import { ExperienceService } from '../experience.service';
 })
 export class ExperienceListComponent implements OnInit {
   experiences: Experience[];
+  selectedExperience: number;
 
   constructor(private experienceService: ExperienceService) { }
 
   ngOnInit(): void {
-    this.experiences = this.experienceService.getExperiences();  
+    this.experiences = this.experienceService.getExperiences();
+  }
+
+  onSelectExperience(id: number): void {
+    this.experienceService.setExperienceSelected(id);
   }
 }

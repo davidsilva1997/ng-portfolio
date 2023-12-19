@@ -1,5 +1,4 @@
 .pf-card-container {
-    /* max-width: 540px; */
     max-height: 130px;
     overflow: hidden;
     cursor: pointer;
@@ -12,9 +11,11 @@
     overflow: hidden;
 }
 
-/* .pf-card-body {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; 
-    -webkit-box-orient: vertical;
-    overflow: scroll;
-} */
+.pf-card-image {
+    max-width: 85%;
+}
+
+.pf-card-selected {
+  border: 3px solid cadetblue;
+  background-color: #c3d3d44e;
+}

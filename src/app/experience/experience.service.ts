@@ -7,7 +7,7 @@ export class ExperienceService {
         new Experience(
             1,
             'Main Software, Lda',
-            '../../assets/mainsoftware.jpeg',
+            '../../assets/mainsoftware.png',
             'Full Stack Developer Internship',
             'December 2022',
             'September 2023',
@@ -23,7 +23,7 @@ export class ExperienceService {
         new Experience(
             2,
             'Main Software, Lda',
-            '../../assets/mainsoftware.jpeg',
+            '../../assets/mainsoftware.png',
             'Software Developer Internship',
             'March 2022',
             'July 2022',
@@ -46,6 +46,7 @@ export class ExperienceService {
             ['HTML', 'CSS', 'Javascript']
         )
     ]
+    private experienceSelected: number;
 
     getExperiences(): Experience[] {
         return this.experiences.slice();
@@ -55,5 +56,13 @@ export class ExperienceService {
         const experience = this.experiences.find(find => (find.id === id));
 
         return experience;
+    }
+
+    setExperienceSelected(id: number){
+        this.experienceSelected = id;
+    }
+
+    getExperienceSelected() : number {
+        return this.experienceSelected;
     }
 }
