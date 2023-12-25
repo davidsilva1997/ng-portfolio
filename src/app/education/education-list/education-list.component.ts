@@ -15,4 +15,8 @@ export class EducationListComponent implements OnInit {
   ngOnInit(): void {
     this.educations = this.educationService.getEducations();
   }
+
+  onSelect(id: number){
+    this.educationService.setSelectedEducation(id);
+  }
 }

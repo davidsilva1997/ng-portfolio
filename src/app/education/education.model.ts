@@ -10,9 +10,9 @@ export class Education {
     public startDate: string;
     public endDate: string;
     public curricularUnits: CurricularUnit[];
-    public grade: string;
+    public grade: number;
 
-    constructor(id: number, school: string, schoolImage: string, schoolUrl: string, course: string, branch: string, startDate: string, endDate: string, curricularUnits: CurricularUnit[], grade: string){
+    constructor(id: number, school: string, schoolImage: string, schoolUrl: string, course: string, branch: string, startDate: string, endDate: string, curricularUnits: CurricularUnit[], grade: number){
         this.id = id;
         this.school = school;
         this.schoolImage = schoolImage;

@@ -1,7 +1,10 @@
-.pf-margin-left {
-    margin-left: 20px;
+.pf-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: cadetblue;
+    border-bottom: 4px solid cadetblue;
 }
 
-.pf-text-strong {
-    font-weight: bold;
+.pf-text-decoration-none {
+    text-decoration: none;
 }

@@ -64,5 +64,5 @@ export class ExperienceService {
 
     getExperienceSelected() : number {
         return this.experienceSelected;
-    }
+    } 
 }

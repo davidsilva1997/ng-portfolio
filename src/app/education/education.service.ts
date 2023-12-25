@@ -40,7 +40,7 @@ export class EducationService {
                 new CurricularUnit('Estágio', 3, 2, 27, 19),
 
             ],
-            '14/20'
+            14
         ),
         new Education(
             2,
@@ -72,9 +72,10 @@ export class EducationService {
                 new CurricularUnit('Sistemas de Informação II', 2, 1, 5, 14),
                 new CurricularUnit('Estágio', 2, 2, 30, 16)
             ],
-            '14/20'
+            14
         )
     ]
+    private selectedEducation: number;
 
     getEducations(): Education[] {
         return this.educations.slice();
@@ -84,5 +85,13 @@ export class EducationService {
         const education = this.educations.find(find => (find.id === id));
 
         return education;
+    }
+
+    setSelectedEducation(id: number){
+        this.selectedEducation = id;
+    }
+
+    getSelectedEducation() {
+        return this.selectedEducation;
     }
 }

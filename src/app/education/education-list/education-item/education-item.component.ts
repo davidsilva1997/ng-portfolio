@@ -10,6 +10,7 @@ import { Card } from '../../../models/card.model';
 export class EducationItemComponent implements OnInit {
   @Input('education') education: Education;
   @Input('id') id: number;
+  @Input('selected') selected: boolean = false;
   card: Card;
 
   ngOnInit(): void {

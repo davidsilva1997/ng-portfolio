@@ -1,69 +1,72 @@
 <div class="row">
     <div class="col-md-12">
-        <h3>{{ education.course }}</h3>
-        <h4> {{ education.branch }}</h4>
-        <p>{{ education.startDate }} - {{ education.endDate }}</p>
+        <p class="pf-label">Education</p>
+        <p class="fw-bold fs-5 mb-1">{{ education.course }} {{ education.branch }}</p>
+        <p class="fw-lighter fst-italic">{{ education.startDate }} - {{ education.endDate }}</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <p class="lead">School</p>
-        <p class="pf-margin-left"><a [href]="education.schoolUrl">{{ education.school }}</a></p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <p class="lead">Curricular units</p>
-        <div class="pf-margin-left">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div *ngFor="let year of years; let yearIndex = index">
-                    <div class="accordion-item" *ngFor="let semester of semesters">
-                        <h2 class="accordion-header" [id]="'flush-heading' + yearIndex + '-' + semester">
-                            <button class="accordion-button collapsed pf-text-strong" type="button" data-bs-toggle="collapse"
-                                [attr.data-bs-target]="'#flush-collapse' + yearIndex + '-' + semester"
-                                aria-expanded="false"
-                                [attr.aria-controls]="'flush-collapse' + yearIndex + '-' + semester">
-                                Curricular Year {{ year }} - Semester {{ semester }}
-                            </button>
-                        </h2>
-                        <div [id]="'flush-collapse' + yearIndex + '-' + semester" class="accordion-collapse collapse"
-                            [attr.aria-labelledby]="'flush-heading' + yearIndex + '-' + semester"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Name</th>
-                                            <!-- <th scope="col">Curricular Year</th>
-                                            <th scope="col">Semester</th> -->
-                                            <th scope="col">ECTS</th>
-                                            <th scope="col">Grade</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr *ngFor="let curricularUnit of education.curricularUnits">
-                                            <ng-container
-                                                *ngIf="curricularUnit.year === year && curricularUnit.semester === semester">
-                                                <td>{{ curricularUnit.name }}</td>
-                                                <!-- <td>{{ curricularUnit.year }}</td>
-                                                <td>{{ curricularUnit.semester }}</td> -->
-                                                <td>{{ curricularUnit.ects }}</td>
-                                                <td>{{ curricularUnit.grade }}</td>
-                                            </ng-container>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <p class="pf-label">School</p>
+        <div class="row">
+            <div class="col-md-8">
+                <p>{{ education.school }}</p>
+            </div>
+            <div class="col-md-4">
+                <a [href]="education.schoolUrl">
+                    <img [src]="education.schoolImage" [alt]="education.school" class="img-fluid">
+                </a>
             </div>
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <p class="lead">Final grade</p>
-        <p class="pf-margin-left">{{ education.grade }}</p>
+        <p class="pf-label">Final grade</p>
+        <div class="badge bg-dark text-wrap m-1 mb-3">{{ education.grade }} / 20</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p class="pf-label">Curricular Units</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div *ngFor="let year of years; let yearIndex = index">
+                <div class="accordion-item" *ngFor="let semester of semesters">
+                    <h2 class="accordion-header" [id]="'flush-heading' + yearIndex + '-' + semester">
+                        <button class="accordion-button collapsed pf-text-strong" type="button"
+                            data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#flush-collapse' + yearIndex + '-' + semester" aria-expanded="false"
+                            [attr.aria-controls]="'flush-collapse' + yearIndex + '-' + semester">
+                            Curricular Year {{ year }} - Semester {{ semester }}
+                        </button>
+                    </h2>
+                    <div [id]="'flush-collapse' + yearIndex + '-' + semester" class="accordion-collapse collapse"
+                        [attr.aria-labelledby]="'flush-heading' + yearIndex + '-' + semester"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">ECTS</th>
+                                        <th scope="col">Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let curricularUnit of education.curricularUnits">
+                                        <ng-container
+                                            *ngIf="curricularUnit.year === year && curricularUnit.semester === semester">
+                                            <td>{{ curricularUnit.name }}</td>
+                                            <td>{{ curricularUnit.ects }}</td>
+                                            <td>{{ curricularUnit.grade }}</td>
+                                        </ng-container>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

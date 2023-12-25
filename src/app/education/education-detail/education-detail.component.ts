@@ -26,6 +26,8 @@ export class EducationDetailComponent implements OnInit {
           this.router.navigate(['/education']);
         }
 
+        this.educationService.setSelectedEducation(id);
+
         const distinctYears = Array.from(new Set(this.education.curricularUnits.map(curricularUnit => curricularUnit.year)));
         const distinctSemesters = Array.from(new Set(this.education.curricularUnits.map(curricularUnit => curricularUnit.semester)));
 
