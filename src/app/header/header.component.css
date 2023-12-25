@@ -1,0 +1,9 @@
+.pf-background-color {
+    background-color: cadetblue;
+}
+
+
+.navbar-nav .nav-item.active a {
+    font-weight: bold;
+}
+
