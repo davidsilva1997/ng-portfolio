@@ -30,7 +30,7 @@ const appRoutes = [
             { path: ':id', component: EducationDetailComponent }
         ]
     },
-    { path: 'projects', component: ProjectsComponent },
+    // { path: 'projects', component: ProjectsComponent },
     { path: 'formations', component: FormationComponent },
     { path: 'not-found', component: ErrorPageComponent, data: { message: 'Page not found!' } },
     { path: '**', redirectTo: '/not-found' },

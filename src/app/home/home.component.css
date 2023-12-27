@@ -1,3 +1,42 @@
-* {
-    background-color: cadetblue;
+.pf-presentation {
+    font-size: 32px;
+}
+
+.pf-text-color {
+    color: cadetblue;
+}
+
+.pf-button {
+    background-color: transparent !important; 
+    color: cadetblue;
+    border-color: cadetblue;
+}
+
+.pf-button:hover {
+    background-color: cadetblue !important; 
+    color: white;
+}
+
+.pf-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pf-flex-row div {
+    margin: 5px;
+}
+
+.pf-flex-row img {
+    width: 32px;
+    height: 32px;
+}
+
+.pf-image {
+    width: 80%;
+}
+
+.pf-content-center {
+    justify-content: center;
+    gap: 20px;
 }
