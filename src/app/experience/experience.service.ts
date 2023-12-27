@@ -7,7 +7,7 @@ export class ExperienceService {
         new Experience(
             1,
             'Main Software, Lda',
-            '../../assets/mainsoftware.png',
+            'assets/mainsoftware.png',
             'Full Stack Developer Internship',
             'December 2022',
             'September 2023',
@@ -23,7 +23,7 @@ export class ExperienceService {
         new Experience(
             2,
             'Main Software, Lda',
-            '../../assets/mainsoftware.png',
+            'assets/mainsoftware.png',
             'Software Developer Internship',
             'March 2022',
             'July 2022',
@@ -36,7 +36,7 @@ export class ExperienceService {
         new Experience(
             3,
             'Câmara Municipal de Penacova',
-            '../../assets/cmpenacova.png',
+            'assets/cmpenacova.png',
             'Web Developer Internship',
             'March 2018',
             'July 2018',

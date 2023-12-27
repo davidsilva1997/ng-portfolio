@@ -6,7 +6,7 @@ export class EducationService {
         new Education(
             1,
             'Instituto Superior de Engenharia de Coimbra',
-            '../../assets/isec.png',
+            'assets/isec.png',
             'https://www.isec.pt/',
             'Licenciatura',
             'Engenharia Informática - Desenvolvimento de Aplicações',
@@ -45,7 +45,7 @@ export class EducationService {
         new Education(
             2,
             'Instituto Superior de Engenharia de Coimbra',
-            '../../assets/isec.png',
+            'assets/isec.png',
             'https://www.isec.pt/',
             'Curso Técnico Superior Profissional',
             'Tecnologias e Programação de Sistemas de Informação',
