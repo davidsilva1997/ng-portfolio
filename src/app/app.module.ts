@@ -19,6 +19,8 @@ import { EducationListComponent } from './education/education-list/education-lis
 import { EducationItemComponent } from './education/education-list/education-item/education-item.component';
 import { EducationStartComponent } from './education/education-start/education-start.component';
 import { EducationDetailComponent } from './education/education-detail/education-detail.component';
+import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { EducationDetailComponent } from './education/education-detail/education
     EducationListComponent,
     EducationItemComponent,
     EducationStartComponent,
-    EducationDetailComponent
+    EducationDetailComponent,
+    ProjectsListComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

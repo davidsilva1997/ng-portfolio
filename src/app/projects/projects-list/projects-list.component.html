@@ -1,0 +1,15 @@
+<div class="container px-4 py-5">
+    <!-- <h2 class="border-bottom">Projects</h2> -->
+    <div class="row g-4 py-5 tow-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start" *ngFor="let project of projects">
+            <div class="icon-square flex-shrink-0 me-3 bg-light text-dark">
+                <img class="bi" width="32px" height="32px" [src]="project.iconUrl" [alt]="project.title">
+            </div>
+            <div>
+                <h5 class="border-bottom">{{ project.title }}</h5>
+                <p>{{ project.description }}</p>
+                <a (click)="onSelectProject(project.id)" class="btn btn-outline-secondary btn-sm">+ Info</a>
+            </div>
+        </div>
+    </div>
+</div>
