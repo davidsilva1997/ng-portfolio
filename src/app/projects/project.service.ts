@@ -9,10 +9,18 @@ export class ProjectService {
             'Recipe Book',
             'Angular App to manage recipes and shopping list. Course project from Udemy formation.',
             'assets/projects/angular.png',
-            [],
+            [
+                'assets/projects/recipe-book/01.png',
+                'assets/projects/recipe-book/02.png',
+                'assets/projects/recipe-book/03.png',
+                'assets/projects/recipe-book/04.png',
+                'assets/projects/recipe-book/05.png',
+                'assets/projects/recipe-book/06.png'
+            ],
             ['Angular'],
             'https://github.com/davidsilva1997/angular-course-project',
-            null
+            null,
+            'https://ng--course-project.web.app/auth'
         ),
         new Project(
             2,
@@ -22,6 +30,7 @@ export class ProjectService {
             [],
             ['Angular'],
             'https://github.com/davidsilva1997/ng-portfolio',
+            null,
             null
         ),
         new Project(
@@ -32,7 +41,8 @@ export class ProjectService {
             [],
             ['C'],
             'https://github.com/davidsilva1997/MSGDIST',
-            'https://www.youtube.com/embed/GjRX0WGMefQ'
+            'https://www.youtube.com/embed/GjRX0WGMefQ',
+            null
         ),
         new Project(
             4,
@@ -42,7 +52,8 @@ export class ProjectService {
             [],
             ['C', 'Win32 API'],
             'https://github.com/davidsilva1997/SGEA',
-            'https://www.youtube.com/embed/vlxLFu9PihI'
+            'https://www.youtube.com/embed/vlxLFu9PihI',
+            null
         )
     ]
 

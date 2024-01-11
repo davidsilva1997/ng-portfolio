@@ -5,9 +5,39 @@
     <div class="col-md-10">
         <h4 class="border-bottom">{{ project.title }}</h4>
         <p class="lead">{{ project.description }}</p>
+        <span *ngFor="let technology of project.technologies" class="badge bg-dark m-1">{{ technology }}</span><br>
+        <a *ngIf="project.demoUrl" [href]="project.demoUrl" class="link-primary text-decoration-none">Try the demo!</a>
     </div>
 </div>
-<div class="row py-2">
+<div class="row" *ngIf="project.imageUrls.length">
+    <div class="col-md-10 offset-md-2">
+        <div id="carouselImages" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" *ngFor="let imageUrl of project.imageUrls; let i = index"
+                    [attr.data-bs-target]="'#carouselImages'" [attr.data-bs-slide-to]="i" [class.active]="i === 0"
+                    [attr.aria-current]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div *ngFor="let imageUrl of project.imageUrls; let i = index" class="carousel-item text-center"
+                    [class.active]="i === 0">
+                    <img [src]="imageUrl" class="d-block w-75 mx-auto" [alt]="imageUrl">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselImages'"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselImages'"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row py-4">
     <div class="col-md-10 offset-md-2">
         <div *ngIf="project.githubUrl" class="d-flex align-items-center">
             <img src="assets/social-media/github.png" alt="GitHub" width="32px" height="32px" style="margin-right: 5px">
@@ -18,7 +48,8 @@
 <div class="row py-2">
     <div class="col-md-10 offset-md-2">
         <div *ngIf="project.youtubeUrl">
-            <iframe width="384" height="216" [src]="sanitizeVideoUrl(project.youtubeUrl)" frameborder="0" allowfullscreen></iframe>
+            <iframe width="384" height="216" [src]="sanitizeVideoUrl(project.youtubeUrl)" frameborder="0"
+                allowfullscreen></iframe>
         </div>
     </div>
 </div>

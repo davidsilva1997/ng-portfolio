@@ -7,8 +7,9 @@ export class Project {
     public technologies: string[];
     public githubUrl?: string;
     public youtubeUrl?: string;
+    public demoUrl?: string;
 
-    constructor(id: number, title: string, description: string, iconUrl: string, imageUrls: string[], technologies: string[], githubUrl: string, youtubeUrl: string) {
+    constructor(id: number, title: string, description: string, iconUrl: string, imageUrls: string[], technologies: string[], githubUrl: string, youtubeUrl: string, demoUrl: string) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -17,5 +18,6 @@ export class Project {
         this.technologies = technologies;
         this.githubUrl = githubUrl;
         this.youtubeUrl = youtubeUrl;
+        this.demoUrl = demoUrl;
     }
 }
