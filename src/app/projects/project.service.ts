@@ -54,6 +54,26 @@ export class ProjectService {
             'https://github.com/davidsilva1997/SGEA',
             'https://www.youtube.com/embed/vlxLFu9PihI',
             null
+        ),
+        new Project(
+            5,
+            'Money Flow Tracker',
+            'The Money Flow Tracker is a web application built using the Angular framework that helps users manage and visualize their financial transactions seamlessly. With an intuitive and user-friendly interface, this application allows users to input income and expenses, categorize transactions, and monitor their overall financial health.',
+            'assets/projects/angular.png',
+            [
+                'assets/projects/money-flow-tracker/01.png',
+                'assets/projects/money-flow-tracker/02.png',
+                'assets/projects/money-flow-tracker/03.png',
+                'assets/projects/money-flow-tracker/04.png',
+                'assets/projects/money-flow-tracker/05.png',
+                'assets/projects/money-flow-tracker/06.png',
+                'assets/projects/money-flow-tracker/07.png',
+                'assets/projects/money-flow-tracker/08.png',
+            ],
+            ['Angular'],
+            'https://github.com/davidsilva1997/ng-money-flow-tracker',
+            null,
+            'https://ng--money-flow-tracker.web.app/'
         )
     ]
 
